@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Sign Up</title>
+  <style>
+    body {
+      background-image: url(images/header-image.png);
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      position: relative;
+      z-index: 1;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: none;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 1);
+      color: black;
+    }
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: red;
+      color: white;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: darkred;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .footer {
+      background-color: black;
+      color: white;
+      padding: 10px 20px; /* Adjusted padding */
+      text-align: left; /* Align text to the left */
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: 0;
+    }
+    .header{
+    width: 100%;
+    height: 10vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/logo.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+  </style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="images/logo.png" class="logo">
+        </nav>
+    </div>
+  <div class="container">
+    <h1>Sign Up</h1>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <label>
+        <input type="checkbox" name="subscribe"> Remember me
+      </label>
+
+      <input type="submit" value="Sign Up">
+    </form>
+  </div>
+  <div class="footer">
+    <p>Contact us: netfilx.com | Phone: +1234567890</p>
+  </div>
+</body>
+</html>
